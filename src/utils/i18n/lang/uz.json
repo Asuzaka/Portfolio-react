@@ -1,0 +1,14 @@
+{
+    "OverallMsgWarning": "⚠️ Ushbu sayt ishlab chiqilmoqda. Iltimos, keyinroq qaytib keling!",
+    "OverallMsgGoBack": "Ortga",
+    "OverallMsgGoHome": "Bosh sahifaga",
+    "WelcomeMsgHomepage": "Mening Portfoliomga Xush Kelibsiz",
+    "WelcomeMsgHomepageDesc": "Men JavaScript va Go bo‘yicha tajribaga ega junior veb-dasturchiman. Men 20 dan ortiq loyihani yakunladim va moslashuvchan, interaktiv dizaynlar yaratishga ixtisoslashganman.",
+    "WelcomeMsgHomepageButton1": "Loyihalarimni ko‘rish",
+    "WelcomeMsgHomepageButton2": "Men haqimda batafsil",
+    "WorksPageMsgText": "Hali hech qanday ish qo‘shilmadi.... :(",
+    "WorksPageMsgButton1": "O‘ynash",
+    "AboutPageMsgText": "Maslahat!: Bosh sahifaga qaytish uchun uy belgisini bosing",
+    "GamePageMsgGameOver": "O‘yin tugadi",
+    "GamePageMsgRestart": "Qayta boshlash"
+}

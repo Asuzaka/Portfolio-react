@@ -1,0 +1,14 @@
+{
+    "OverallMsgWarning": "⚠️ This site is under development. Please check back later!",
+    "OverallMsgGoBack": "Go Back",
+    "OverallMsgGoHome": "Go Home",
+    "WelcomeMsgHomepage": "Welcome to My Portfolio",
+    "WelcomeMsgHomepageDesc" : "I'm a junior web developer with experience in JavaScript and Go. I have completed over 20 projects and specialize in making responsive, interactive designs.",
+    "WelcomeMsgHomepageButton1": "See my projects",
+    "WelcomeMsgHomepageButton2": "More about me",
+    "WorksPageMsgText" :"No works added yet.... :(",
+    "WorksPageMsgButton1": "Go play",
+    "AboutPageMsgText" : "Hint!: click on the home logo to go home",
+    "GamePageMsgGameOver" : "Game Over",
+    "GamePageMsgRestart" : "Restart"
+}

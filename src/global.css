@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+* {
+    @apply transition-colors duration-200
+}
+
+@theme {
+    --drop-shadow-nav-cus0: 0px 51px 36px rgba(34, 60, 80, 1);
+    --drop-shadow-nav-cus0-dark: 0px 51px 36px rgba(255, 255, 255, 0.6);
+}
+
+@layer components {
+    .bg-site-dark {
+        background: -webkit-linear-gradient(180deg, rgb(0, 0, 0) 37%, rgb(48, 3, 126) 78%);
+        background: -moz-linear-gradient(180deg, rgb(0, 0, 0) 37%, rgb(48, 3, 126) 78%);
+        background: linear-gradient(180deg, rgb(0, 0, 0) 37%, rgb(48, 3, 126) 78%);
+    }
+
+    .bg-site {
+        background: #D3CCE3;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "OverallMsgWarning": "⚠️ Этот сайт находится в разработке. Пожалуйста, зайдите позже!",
+    "OverallMsgGoBack": "Назад",
+    "OverallMsgGoHome": "На главную",
+    "WelcomeMsgHomepage": "Добро пожаловать в мое портфолио",
+    "WelcomeMsgHomepageDesc": "Я младший веб-разработчик с опытом работы в JavaScript и Go. Я завершил более 20 проектов и специализируюсь на создании адаптивных, интерактивных дизайнов.",
+    "WelcomeMsgHomepageButton1": "Посмотреть мои проекты",
+    "WelcomeMsgHomepageButton2": "Подробнее обо мне",
+    "WorksPageMsgText": "Пока нет добавленных работ.... :(",
+    "WorksPageMsgButton1": "Играть",
+    "AboutPageMsgText": "Подсказка!: нажмите на логотип дома, чтобы вернуться",
+    "GamePageMsgGameOver": "Игра окончена",
+    "GamePageMsgRestart": "Перезапустить"
+}
