@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Select from "react-select";
-
+import us from "../assets/svg/us.svg";
+import ru from "../assets/svg/ru.svg";
+import uz from "../assets/svg/uz.svg";
 const options = [
   {
     value: "en",
     label: (
       <>
-        <img src="/us.svg" width="20" />
+        <img src={us} width="20" />
       </>
     ),
   },
@@ -15,7 +17,7 @@ const options = [
     value: "ru",
     label: (
       <>
-        <img src="/ru.svg" width="20" />
+        <img src={ru} width="20" />
       </>
     ),
   },
@@ -23,7 +25,7 @@ const options = [
     value: "uz",
     label: (
       <>
-        <img src="/uz.svg" width="20" />
+        <img src={uz} width="20" />
       </>
     ),
   },

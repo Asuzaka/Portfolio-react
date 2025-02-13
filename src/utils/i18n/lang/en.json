@@ -1,5 +1,4 @@
 {
-    "OverallMsgWarning": "⚠️ This site is under development. Please check back later!",
     "OverallMsgGoBack": "Go Back",
     "OverallMsgGoHome": "Go Home",
     "WelcomeMsgHomepage": "Welcome to My Portfolio",
@@ -10,5 +9,18 @@
     "WorksPageMsgButton1": "Go play",
     "AboutPageMsgText" : "Hint!: click on the home logo to go home",
     "GamePageMsgGameOver" : "Game Over",
-    "GamePageMsgRestart" : "Restart"
+    "GamePageMsgRestart" : "Restart",
+    "Portfoliostitle": "Portfolio itself",
+    "PortfoliosContent": "#CodeComment, So Portfolio, as you can see everthing, it&apos;s how it is. In order to have an easy way to introduce myself and my works, i create it. This one you see currently is Version : 3.1.0, Previous ones else than v: 3.0.0 are not exist. I&apos;m keeping track of changelogs and updates from only v3.",
+    "PortfoliosDate": "[1.31 pm, 13 february 2025]",
+    "DummyContentTitle": "Dummy Data",
+    "DummyContenttext": "#CodeComment, This section is added just to fill an empty ones to look better nothing else",
+    "DummyContenttext2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi mollitia vitae esse voluptas. Ullam hic tempora aliquam cum laudantium ratione provident, aspernatur et, est obcaecati corrupti dolorem nobis magni corporis.",
+    "CalculatorTitle": "A Calculator",
+    "Calculatortext": "#codeComment, On React, code of this project is really bad because i tried to use UseReducer and UseState at the same time. I won&apos;t make this mistake again and as a memory for the future i will leave it as itis, so it will be a reminder, code took around 5 hours",
+    "Calculatordate": "[12.32 pm, 32 december 2024]",
+    "OasisTitle":"The Wild Oasis",
+    "Oasistext":" #CodeComment, On Next, this one is my first full-stack project, database as Supabase, Login as AuthJs. This is a project build by ending of the course, where out teacher Jonas Schmedtmann explained every step, and other possible options, the reasons why we choose one or another technology",
+    "Oasisdate":"[7:03 pm, 28 december 2024]",
+    "listOfProjects" : ["Calculator", "Oasis", "Portfolio", "Dummy", "Dummy", "Dummy"]
 }

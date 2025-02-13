@@ -4,7 +4,7 @@ import ThemeSwitch from "./ui/ThemeSwitch";
 
 function Navigation() {
   return (
-    <nav className="flex column items-center justify-between py-3 px-2 lg:px-0">
+    <nav className="flex column items-center justify-between py-3 px-2">
       <Logo />
       <div className="flex column items-center gap-4">
         <LanguageSelection />

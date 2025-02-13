@@ -1,13 +1,14 @@
 import { useEffect, useState, useRef } from "react";
-import playerImg from "../assets/char.png";
-import stoneImg from "../assets/stone.png";
-import bgImg from "../assets/bg.png";
-import bgDark from "../assets/bg-dark.png";
-import playerDark from "../assets/player-dark.png";
-import stoneDark from "../assets/stone-dark.png";
+import playerImg from "../assets/game/char.png";
+import stoneImg from "../assets/game/stone.png";
+import bgImg from "../assets/game/bg.png";
+import bgDark from "../assets/game/bg-dark.png";
+import playerDark from "../assets/game/player-dark.png";
+import stoneDark from "../assets/game/stone-dark.png";
 import { useNavigate } from "react-router";
 import { useGeneralContext } from "../hooks/useGeneralContext";
 import { useTranslation } from "react-i18next";
+import "../assets/game/style/Game.css";
 
 function Game({ immortality = true, economy = false, superEconomy = false }) {
   // Game Logic
@@ -48,8 +49,8 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
     const deltaY = touch.clientY - touchStartRef.current.y;
 
     // Move based on touch direction
-    setPlayerXCord((prev) => prev + deltaX * 0.5); // Adjust speed factor
-    setPlayerYCord((prev) => prev + deltaY * 0.5); //Adjust speed factor
+    setPlayerXCord((prev) => prev + deltaX * 1); // Adjust speed factor
+    setPlayerYCord((prev) => prev + deltaY * 1); //Adjust speed factor
 
     // Update reference for smoother movement
     touchStartRef.current = { x: touch.clientX, y: touch.clientY };
@@ -182,7 +183,7 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      className="h-screen absolute top-0 left-0 z-[-1] w-full bg-black overflow-hidden "
+      className="h-dvh absolute top-0 left-0 z-[-1] w-full  bg-black overflow-hidden "
       style={{
         backgroundImage: `url(${dark ? bgDark : bgImg})`,
         backgroundSize: "cover",
