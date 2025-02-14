@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router";
 import { GeneralProvider } from "./hooks/useGeneralContext";
 import Homepage from "./pages/Homepage";
-import About from "./pages/about";
+import About from "./pages/About";
 import Layout from "./components/Layout";
 import "./utils/i18n/i18n";
 import Game from "./components/Game";
