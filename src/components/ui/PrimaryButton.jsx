@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import branch from "../../assets/img/branch.png";
-import cosmicBranch from "../../assets/img/cosmic-branch.png";
+import branch from "../../assets/webp/branch.webp";
+import cosmicBranch from "../../assets/webp/cosmic-branch.webp";
 import { useState } from "react";
 import { useGeneralContext } from "../../hooks/useGeneralContext";
 

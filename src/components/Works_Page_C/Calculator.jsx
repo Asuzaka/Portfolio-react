@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import calculator from "../../assets/img/calculator.png";
+import calculator from "../../assets/webp/calculator.webp";
 
 function Calculator() {
   const { t } = useTranslation();

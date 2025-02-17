@@ -11,7 +11,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.4",
+    "@tailwindcss/vite": "^4.0.6",
     "i18next": "^24.2.2",
     "motion": "^12.4.0",
     "react": "^18.3.1",
@@ -20,7 +20,7 @@
     "react-icons": "^5.4.0",
     "react-router": "^7.1.4",
     "react-select": "^5.10.0",
-    "tailwindcss": "^4.0.4"
+    "tailwindcss": "^4.0.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

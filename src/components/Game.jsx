@@ -1,14 +1,14 @@
 import { useEffect, useState, useRef } from "react";
-import playerImg from "../assets/game/char.png";
-import stoneImg from "../assets/game/stone.png";
-import bgImg from "../assets/game/bg.png";
-import bgDark from "../assets/game/bg-dark.png";
-import playerDark from "../assets/game/player-dark.png";
-import stoneDark from "../assets/game/stone-dark.png";
+import playerImg from "../assets/webp/char.webp";
+import stoneImg from "../assets/webp/stone.webp";
+import bgImg from "../assets/webp/bg.webp";
+import bgDark from "../assets/webp/bg-dark.webp";
+import playerDark from "../assets/webp/player-dark.webp";
+import stoneDark from "../assets/webp/stone-dark.webp";
 import { useNavigate } from "react-router";
 import { useGeneralContext } from "../hooks/useGeneralContext";
 import { useTranslation } from "react-i18next";
-import "../assets/game/style/Game.css";
+import "../assets/style/Game.css";
 
 function Game({ immortality = true, economy = false, superEconomy = false }) {
   // Game Logic
@@ -151,7 +151,7 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
   useEffect(() => {
     if (economy) return;
     if (!active) return;
-    if (immortality) return; //Case for Animation and not to end
+    if (immortality) return; //Case for Animation not to end
     function checkCollision() {
       for (const stone of stones) {
         if (

@@ -20,7 +20,7 @@ export default function App() {
               <Route path="/about" element={<About />} />
               <Route path="/works" element={<Works />} />
             </Route>
-            {/* Pure Routes without Layout covering them */}
+            {/* Pure Routes without Layout */}
             <Route path="/game" element={<Game immortality={false} />}></Route>
           </Routes>
         </BrowserRouter>

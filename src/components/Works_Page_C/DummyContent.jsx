@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import figma from "../../assets/img/figma.png";
+import figma from "../../assets/webp/figma.webp";
 
 function DummyContent() {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Oasis from "../../assets/img/Oasis.png";
+import Oasis from "../../assets/webp/Oasis.webp";
 
 function TheWildOasis() {
   const { t } = useTranslation();
