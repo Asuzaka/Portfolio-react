@@ -14,7 +14,24 @@ function TheWildOasis() {
       <div className="flex justify-center">
         <img className="lg:max-w-xl" src={Oasis} />
       </div>
-      <p>{t("Oasistext")}</p>
+      <p>
+        {t("Oasistext1")}
+        <a className="underline" href="https://supabase.com">
+          Supabase
+        </a>
+        {t("Oasistext2")}
+        <a className="underline" href="https://authjs.dev">
+          Auth js
+        </a>
+        {t("Oasistext3")}
+        <a
+          className="underline"
+          href="https://www.udemy.com/user/jonasschmedtmann/"
+        >
+          Jonas Schmedtmann
+        </a>
+        {t("Oasistext4")}
+      </p>
       <p>{t("Oasisdate")}</p>
     </div>
   );

@@ -7,19 +7,18 @@ import { FaInstagram } from "react-icons/fa";
 import AnimatedKnight from "../components/ui/AnimatedKnight";
 import AboutCard from "../components/ui/AboutCard";
 import { FaGithub } from "react-icons/fa";
-import { useGeneralContext } from "../hooks/useGeneralContext";
 
 function About() {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const { dark } = useGeneralContext();
+
   return (
-    <div className="flex flex-col items-center relative">
-      <div className="bg-emerald-900/60 dark:bg-black/50 rounded-3xl mx-auto px-10 py-8">
+    <div className="flex flex-col items-center relative px-2 sm:px-0">
+      <div className="bg-emerald-900/60 dark:bg-black/50 rounded-3xl mx-auto px-4 sm:px-10 py-4 sm:py-8">
         <div className="flex flex-col items-center">
           <div className="flex gap-2 items-center mb-5 bg-gray-700/75 px-5 py-2 rounded-3xl drop-shadow-md">
             <span className="text-4xl text-emerald-400">
-              Ligvado's Achivements
+              {t("AboutPageTitle")}
             </span>
             <MdOutlineStar size={36} color="yellow" />
           </div>
@@ -27,17 +26,28 @@ function About() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 mt-6 mx-auto gap-x-10 gap-y-2">
-          <AboutCard title="Full Name">Yuldashev Khurshid</AboutCard>
-          <AboutCard title="Age">18, was born in 2006</AboutCard>
-          <AboutCard title="Education">High school</AboutCard>
-          <AboutCard title="Languages">
-            Native Uzbek, <br /> Russian C1, <br /> English B2 (certification)
+          <AboutCard title={t("AboutFullNameTitle")}>
+            {t("AboutFullName")}
           </AboutCard>
-          <AboutCard title="Technology">React, Node js, Next</AboutCard>
-          <AboutCard title="Commercial Experience">No experience</AboutCard>
-          <AboutCard title="Profession">Front-end Web dev </AboutCard>
-          <AboutCard title="WPM">around 65</AboutCard>
-          <AboutCard title="socials">
+          <AboutCard title={t("AboutAgeTitle")}>{t("AboutAge")}</AboutCard>
+          <AboutCard title={t("AboutEducationTitle")}>
+            {t("AboutEducation")}
+          </AboutCard>
+          <AboutCard title={t("AboutLanguagesTitle")}>
+            {t("AboutLangueges")} <br /> {t("AboutLangueges1")} <br />
+            {t("AboutLangueges2")}
+          </AboutCard>
+          <AboutCard title={t("AboutTechnologyTitle")}>
+            {t("AboutTechnology")}
+          </AboutCard>
+          <AboutCard title={t("AboutCommercialExTitle")}>
+            {t("AboutCommercialEx")}
+          </AboutCard>
+          <AboutCard title={t("AboutProfessionTitle")}>
+            {t("AboutProfession")}
+          </AboutCard>
+          <AboutCard title={t("AboutWpmTitle")}>{t("AboutWpm")}</AboutCard>
+          <AboutCard title={t("AboutSocials")}>
             <a
               href="https://github.com/Asuzaka"
               className="bg-white rounded-full p-1 cursor-pointer"
@@ -59,7 +69,22 @@ function About() {
           </AboutCard>
         </div>
       </div>
-      <div className="absolute top-16 left-0"></div>
+      <div className="flex mt-6 flex-col gap-3 sm:flex-row sm:gap-8">
+        <PrimaryButton
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          {t("OverallMsgGoBack")}
+        </PrimaryButton>
+        <PrimaryButton
+          onClick={() => {
+            navigate("/game");
+          }}
+        >
+          {t("WorksPageMsgButton1")}
+        </PrimaryButton>
+      </div>
     </div>
   );
 }

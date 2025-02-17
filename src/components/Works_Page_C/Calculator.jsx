@@ -14,7 +14,23 @@ function Calculator() {
       <div className="flex justify-center">
         <img className="lg:max-w-xl" src={calculator} />
       </div>
-      <p className="leading-relaxed text-wrap">{t("Calculatortext")}</p>
+      <p className="leading-relaxed text-wrap">
+        {t("Calculatortext1")}
+        <a
+          className="underline"
+          href="https://react.dev/reference/react/useReducer"
+        >
+          UseReducer
+        </a>
+        {t("Calculatortext2")}
+        <a
+          className="underline"
+          href="https://react.dev/reference/react/useState"
+        >
+          UseState
+        </a>
+        {t("Calculatortext3")}
+      </p>
       <p>{t("Calculatordate")}</p>
     </div>
   );
