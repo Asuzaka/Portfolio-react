@@ -1,12 +1,15 @@
+// Import modules
 import { useNavigate } from "react-router";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { MdOutlineStar } from "react-icons/md";
-import PrimaryButton from "../components/ui/PrimaryButton";
 import { BsTelegram } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
+// Import components
+import PrimaryButton from "../components/ui/PrimaryButton";
 import AnimatedKnight from "../components/ui/AnimatedKnight";
 import AboutCard from "../components/ui/AboutCard";
-import { FaGithub } from "react-icons/fa";
 
 function About() {
   const navigate = useNavigate();
@@ -18,7 +21,7 @@ function About() {
         <div className="flex flex-col items-center">
           <div className="flex gap-2 items-center mb-5 bg-gray-700/75 px-5 py-2 rounded-3xl drop-shadow-md">
             <span className="text-4xl text-emerald-400">
-              {t("AboutPageTitle")}
+              {t("about.title")}
             </span>
             <MdOutlineStar size={36} color="yellow" />
           </div>
@@ -26,28 +29,27 @@ function About() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 mt-6 mx-auto gap-x-10 gap-y-2">
-          <AboutCard title={t("AboutFullNameTitle")}>
-            {t("AboutFullName")}
+          <AboutCard title={t("about.fullName")}>
+            {t("about.values.fullName")}
           </AboutCard>
-          <AboutCard title={t("AboutAgeTitle")}>{t("AboutAge")}</AboutCard>
-          <AboutCard title={t("AboutEducationTitle")}>
-            {t("AboutEducation")}
+          <AboutCard title={t("about.age")}>{t("about.values.age")}</AboutCard>
+          <AboutCard title={t("about.education")}>
+            {t("about.values.education")}
           </AboutCard>
-          <AboutCard title={t("AboutLanguagesTitle")}>
-            {t("AboutLangueges")} <br /> {t("AboutLangueges1")} <br />
-            {t("AboutLangueges2")}
+          <AboutCard title={t("about.languages")}>
+            <Trans i18nKey="about.values.languages" />
           </AboutCard>
-          <AboutCard title={t("AboutTechnologyTitle")}>
-            {t("AboutTechnology")}
+          <AboutCard title={t("about.technology")}>
+            {t("about.values.technology")}
           </AboutCard>
-          <AboutCard title={t("AboutCommercialExTitle")}>
-            {t("AboutCommercialEx")}
+          <AboutCard title={t("about.experience")}>
+            {t("about.values.experience")}
           </AboutCard>
-          <AboutCard title={t("AboutProfessionTitle")}>
-            {t("AboutProfession")}
+          <AboutCard title={t("about.profession")}>
+            {t("about.values.profession")}
           </AboutCard>
-          <AboutCard title={t("AboutWpmTitle")}>{t("AboutWpm")}</AboutCard>
-          <AboutCard title={t("AboutSocials")}>
+          <AboutCard title={t("about.wpm")}>{t("about.values.wpm")}</AboutCard>
+          <AboutCard title={t("about.socials")}>
             <a
               href="https://github.com/Asuzaka"
               className="bg-white rounded-full p-1 cursor-pointer"
@@ -69,20 +71,21 @@ function About() {
           </AboutCard>
         </div>
       </div>
+      {/* Navigation buttons */}
       <div className="flex mt-6 flex-col gap-3 sm:flex-row sm:gap-8">
         <PrimaryButton
           onClick={() => {
             navigate("/");
           }}
         >
-          {t("OverallMsgGoBack")}
+          {t("general.home")}
         </PrimaryButton>
         <PrimaryButton
           onClick={() => {
             navigate("/game");
           }}
         >
-          {t("WorksPageMsgButton1")}
+          {t("general.play")}
         </PrimaryButton>
       </div>
     </div>

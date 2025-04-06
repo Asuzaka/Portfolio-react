@@ -1,10 +1,13 @@
+// Import modules
 import { MdDarkMode } from "react-icons/md";
-import { useGeneralContext } from "../../hooks/useGeneralContext";
 import { IoSunny } from "react-icons/io5";
 import { motion } from "motion/react";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleDarkMode } from "../../store/ThemeSlice";
 
 function ThemeSwitch() {
-  const { setDark, dark } = useGeneralContext();
+  const dark = useSelector((state) => state.theme.dark);
+  const dispatch = useDispatch();
 
   return (
     <div className="flex bg-white/25 rounded-full items-center justify-center relative w-20 shadow-md py-1">
@@ -18,13 +21,13 @@ function ThemeSwitch() {
       ></motion.div>
       <motion.button
         className="rounded-full w-10 flex items-center justify-center cursor-pointer"
-        onClick={() => setDark(true)}
+        onClick={() => dispatch(toggleDarkMode(true))}
       >
         <MdDarkMode fontSize={25} className="z-10" color="white" />
       </motion.button>
       <motion.button
         className="rounded-full  w-10 flex items-center justify-center cursor-pointer"
-        onClick={() => setDark(false)}
+        onClick={() => dispatch(toggleDarkMode(false))}
       >
         <IoSunny fontSize={25} className="z-10" color="yellow" />
       </motion.button>

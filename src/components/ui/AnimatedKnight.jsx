@@ -1,16 +1,18 @@
-import knight from "../../assets/webp/knight_idle_sprite_sheet_128.webp";
-import Darkknight from "../../assets/webp/knight_idle_sprite_sheet_128_dark.webp";
+// Import modules
+import { useSelector } from "react-redux";
 
+// Import components
+import knight from "../../assets/webp/knight_idle_sprite_sheet_128.webp";
+import Darknight from "../../assets/webp/knight_idle_sprite_sheet_128_dark.webp";
 import "../../assets/style/Knight.css";
-import { useGeneralContext } from "../../hooks/useGeneralContext";
 
 function AnimatedKnight() {
-  const { dark } = useGeneralContext();
+  const dark = useSelector((state) => state.theme.dark);
   return (
     <div className="w-[134px] h-[140px] rounded-md border-emerald-500 dark:border-gray-800 border-8">
       <img
         className="knight mt-[-2px]"
-        src={dark ? Darkknight : knight}
+        src={dark ? Darknight : knight}
         alt="img"
       />
     </div>

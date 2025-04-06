@@ -1,0 +1,199 @@
+{
+    "general": {
+      "back": "Back",
+      "play": "Play",
+      "comment": "Comment",
+      "profile": "Profile",
+      "home": "Home",
+      "save": "Save",
+      "saving": "Saving..."
+    },
+    "homepage": {
+      "title": "Welcome to My Portfolio",
+      "text": "I'm a junior web developer with experience in JavaScript and Go. I have completed over 20 projects and specialize in making responsive, interactive designs. (not accurate data)",
+      "button1": "See my projects",
+      "button2": "More about me"
+    },
+    "about": {
+      "title": "Achivements",
+      "fullName": "Full Name",
+      "education": "Education",
+      "technology": "Technology",
+      "profession": "Profession",
+      "socials": "Socials",
+      "age": "Age",
+      "languages": "Languages",
+      "experience": "Commercial Experience",
+      "wpm": "Writing speed (WPM)",
+      "values": {
+        "fullName": "Yuldashev Khurshid",
+        "education": "High school",
+        "technology": "React, NodeJs",
+        "profession": "Frontend Web Dev",
+        "age": "18, was born in 2006",
+        "languages": "Native Uzbek, <br />Russian C1,<br />English B2 (certification)",
+        "experience": "No experience",
+        "wpm": "around 65"
+      }
+    },
+    "works": {
+      "list": ["Calculator", "Oasis", "Portfolio", "Dummy", "Dummy", "Dummy"],
+      "calculator": {
+        "theme": "A Calculator",
+        "text": "#codeComment, On React, code of this project is really bad because I tried to use <0>UseReducer</0> and <1>UseState</1> at the same time. I won't make this mistake again and as a memory for the future I will leave it as it is, so it will be a reminder. Code took around 5 hours.",
+        "date": "12.32 pm, 32 december 2024"
+      },
+      "oasis": {
+        "theme": "The Wild Oasis",
+        "text": "#CodeComment, On Next, this one is my first full-stack project, database as <0>Supabase</0> Login as <1>Auth js</1> . This is a project build by ending of the course, where out teacher <2>Jonas Schmedtmann</2> explained every step, and other possible options, the reasons why we choose one or another technology",
+        "date": "7:03 pm, 28 december 2024"
+      },
+      "portfolio": {
+        "theme": "Portfolio itself",
+        "text": "#CodeComment, So Portfolio, as you can see everthing, it's how it is. In order to have an easy way to introduce myself and my works, i create it. This one you see currently is Version : 3.1.0, Previous ones else than v: 3.0.0 are not exist. I'm keeping track of changelogs and updates only from v3.",
+        "date": "1.31 pm, 13 february 2025"
+      },
+      "dummy": {
+        "theme": "Dummy",
+        "text": "#CodeComment, This section is added just to fill an empty ones to look better nothing else"
+      }
+    },
+    "game": {
+      "over": "Game Over",
+      "restart": "Restart"
+    },
+    "comments": {
+      "welcome": {
+        "title": "Welcome guests!",
+        "text": "If you have reached this page and reading it right now, I appreciate your efforts. If you wish to share feedback or ideas for my portfolio, feel free to leave a comment.",
+        "tip": "Tip: You can comment on portfolio ratings, possible fixes, best practices, and bugs. Feel free to introduce yourself!"
+      },
+      "comment": {
+        "placeholder": "Share your thoughts...",
+        "post": "Post comment",
+        "posting": "Posting..,",
+        "reply": {
+          "single": "reply",
+          "plural": "replies"
+        },
+        "noMore": "No more left",
+        "load": "Load more",
+        "end": "You have reached the end !"
+      }
+    },
+    "profile": {
+      "email": "Email",
+      "name": "Name",
+      "password": {
+        "title": "Password",
+        "explanation": "You cannot change your password from profile settings. <br /> <0>Click here to reset it.<0/> "
+      },
+      "verification": "Verification",
+      "date": "creation date",
+      "description": "Description",
+      "comments": "This place is placeholder for Comments."
+    },
+    "user": {
+      "title": "Welcome, Adventurer",
+      "signUp": {
+        "username": "Username",
+        "email": "Email",
+        "name": "Name",
+        "password": "Password",
+        "passwordConfirm": "Password Confirm",
+        "signUp": "Sign up",
+        "signingUp": "Signing up...",
+        "helper": "Already have an account? <0>Login<0/>",
+        "placeholder": {
+          "username": "Enter your username",
+          "email": "Enter your email",
+          "name": "Enter your name",
+          "password": "Enter your password",
+          "passwordConfirm": "Re-Enter your password"
+        }
+      },
+      "login": {
+        "username": "Username",
+        "password": "Password",
+        "login": "Login",
+        "logging": "Logging in...",
+        "helper": "No account? <0>Sign up<0/>"
+      },
+      "verify": {
+        "error": "Invalid link or expired",
+        "success": "Success! You can close this window",
+        "loading": "Verifying token...",
+        "helper": "Already verified? <0>Home<0/>"
+      },
+      "signSucces": {
+        "title": "Account Created!",
+        "text": "We have created your account successfully. A verification email has been sent to your inbox. Please open the link in the email to verify your account.",
+        "advice": "Once you have verified your account, you can start exploring!",
+        "note": "Do not forget to check spam folder!",
+        "close": "Close"
+      }
+    },
+    "error": {
+      "error500": {
+        "code": 500,
+        "text": "An unexpected error occurred."
+      },
+      "error429": {
+        "code": 429,
+        "text": "Too many requests"
+      },
+      "error404": {
+        "code": 404,
+        "text": "The page you are looking for does not exist."
+      },
+      "error401": {
+        "code": 401,
+        "text": "Unauthorized"
+      },
+      "error400": {
+        "code": 400,
+        "text": "Bad user input"
+      },
+      "fetch": {
+        "fail": "There was an error. Try again later",
+        "create": "Failed to create try again later!",
+        "duplicate": "This {{item}} is already taken",
+        "login": "Login failed, try again later!",
+        "update": "Failed to update",
+        "delete": "Failed to delete",
+        "load": "Failed to load",
+        "post": "Failed to post"
+      },
+      "validation": {
+        "password": {
+          "match": "Passwords don't match",
+          "length": "Password length can't be less than 8"
+        },
+        "email": "Please provide a valid email",
+        "username": {
+          "length": "Username length must be at least 3"
+        }
+      },
+      "support": "If the issue persists, feel free to contact support"
+    },
+    "languages": {
+      "title": "Please select your language from supported languages",
+      "array": [
+        "Uzbek",
+        "English",
+        "Chinese",
+        "Korean",
+        "Russian",
+        "Japanese",
+        "German"
+      ],
+      "Uzbek": "Uzbek",
+      "English": "English",
+      "Chinese": "Chinese",
+      "Korean": "Korean",
+      "Russian": "Russian",
+      "Japanese": "Japanese",
+      "German": "German"
+    }
+  }
+  

@@ -1,8 +1,11 @@
+// Import modules
 import { motion } from "motion/react";
+import { useState } from "react";
+import { useSelector } from "react-redux";
+
+// Import components
 import branch from "../../assets/webp/branch.webp";
 import cosmicBranch from "../../assets/webp/cosmic-branch.webp";
-import { useState } from "react";
-import { useGeneralContext } from "../../hooks/useGeneralContext";
 
 const animationleft = {
   start: {
@@ -26,8 +29,13 @@ const animationright = {
   },
 };
 
-function PrimaryButton({ children, onClick = () => {} }) {
-  const { dark } = useGeneralContext();
+function PrimaryButton({
+  children,
+  onClick = () => {},
+  addStyle = "",
+  disabled = false,
+}) {
+  const dark = useSelector((state) => state.theme.dark);
   const [isHovering, setIsHovering] = useState(false);
   function onHover() {
     setIsHovering(true);
@@ -38,10 +46,11 @@ function PrimaryButton({ children, onClick = () => {} }) {
   return (
     <div className="relative z-20">
       <motion.button
+        disabled={disabled}
         onMouseEnter={onHover}
         onMouseLeave={onHoverLeave}
         onClick={onClick}
-        className=" dark:from-gray-800 dark:to-gray-600 dark:hover:from-gray-500 dark:hover:to-gray-700 w-64 px-6 py-3 bg-gradient-to-r from-emerald-800 to-emerald-300 hover:from-emerald-500 hover:to-emerald-600 cursor-pointer text-white font-bold text-lg rounded-lg shadow-lg hover:scale-105 transition-transfor transition-all"
+        className={`${addStyle}  dark:from-gray-800 dark:to-gray-600 dark:hover:from-gray-500 dark:hover:to-gray-700 w-64 px-6 py-3 bg-gradient-to-r from-emerald-800 to-emerald-300 hover:from-emerald-500 hover:to-emerald-600 cursor-pointer text-white font-bold text-lg rounded-lg shadow-lg hover:scale-105 transition-transfor transition-all`}
       >
         {/* gray-800 gray-600 */}
         {children}

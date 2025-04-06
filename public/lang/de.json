@@ -1,0 +1,198 @@
+{
+  "general": {
+    "back": "Zurück",
+    "play": "Spielen",
+    "comment": "Kommentar",
+    "profile": "Profil",
+    "home": "Startseite",
+    "save": "Speichern",
+    "saving": "Speichern läuft..."
+  },
+  "homepage": {
+    "title": "Willkommen in meinem Portfolio",
+    "text": "Ich bin ein Junior-Webentwickler mit Erfahrung in JavaScript und Go. Ich habe über 20 Projekte abgeschlossen und konzentriere mich auf responsive und interaktive Designs. (Daten nicht exakt)",
+    "button1": "Projekte ansehen",
+    "button2": "Mehr über mich"
+  },
+  "about": {
+    "title": "Errungenschaften",
+    "fullName": "Vollständiger Name",
+    "education": "Bildung",
+    "technology": "Technologien",
+    "profession": "Beruf",
+    "socials": "Soziale Netzwerke",
+    "age": "Alter",
+    "languages": "Sprachen",
+    "experience": "Berufserfahrung",
+    "wpm": "Tippgeschwindigkeit (WPM)",
+    "values": {
+      "fullName": "Yuldashev Khurshid",
+      "education": "Sekundarschule",
+      "technology": "React, NodeJs",
+      "profession": "Frontend-Webentwickler",
+      "age": "18 Jahre alt, geboren 2006",
+      "languages": "Muttersprache Usbekisch, <br />Russisch C1,<br />Englisch B2 (zertifiziert)",
+      "experience": "Keine",
+      "wpm": "ca. 65"
+    }
+  },
+  "works": {
+    "list": ["Taschenrechner", "Oase", "Portfolio", "Demo", "Demo", "Demo"],
+    "calculator": {
+      "theme": "Taschenrechner",
+      "text": "#codeComment, In React geschrieben. Der Code ist in diesem Projekt ziemlich schlecht geworden, da ich <0>UseReducer</0> und <1>UseState</1> gleichzeitig verwendet habe. Ich werde das nicht wieder tun und es als Erinnerung für mich selbst lassen. Die Codierung dauerte etwa 5 Stunden.",
+      "date": "12:32, 32. Dezember 2024"
+    },
+    "oasis": {
+      "theme": "Wilde Oase",
+      "text": "#CodeComment, In Next geschrieben. Dies war mein erstes Full-Stack-Projekt, die Datenbank ist <0>Supabase</0>, Authentifizierung über <1>Auth js</1>. Es war das Abschlussprojekt eines Kurses von <2>Jonas Schmedtmann</2>, in dem jeder Schritt ausführlich erklärt wurde sowie die Gründe für die verwendeten Technologien.",
+      "date": "19:03, 28. Dezember 2024"
+    },
+    "portfolio": {
+      "theme": "Das Portfolio selbst",
+      "text": "#CodeComment, Das Portfolio, das du gerade siehst. Ich habe es erstellt, um mich und meine Projekte einfach vorzustellen. Diese Version ist 3.1.0. Frühere Versionen existieren nicht außer 3.0.0. Änderungen werden ab Version 3 verfolgt.",
+      "date": "13:31, 13. Februar 2025"
+    },
+    "dummy": {
+      "theme": "Demo",
+      "text": "#CodeComment, Diese Demo ist nur da, um den Raum zu füllen und die Oberfläche schöner aussehen zu lassen"
+    }
+  },
+  "game": {
+    "over": "Spiel vorbei",
+    "restart": "Neu starten"
+  },
+  "comments": {
+    "welcome": {
+      "title": "Willkommen, Besucher!",
+      "text": "Wenn du auf dieser Seite gelandet bist und das hier liest, danke ich dir für dein Interesse. Wenn du Feedback oder Ideen zum Portfolio hast – hinterlasse gerne einen Kommentar.",
+      "tip": "Tipp: Du kannst Kommentare zum Portfolio selbst, Verbesserungsvorschläge, Best Practices oder auch Fehler abgeben. Oder dich einfach vorstellen!"
+    },
+    "comment": {
+      "placeholder": "Teile deine Gedanken...",
+      "post": "Kommentar senden",
+      "posting": "Wird gesendet...",
+      "reply": {
+        "single": "Antwort",
+        "plural": "Antwort(en)"
+      },
+      "noMore": "Keine weiteren Inhalte",
+      "load": "Mehr laden",
+      "end": "Du hast das Ende erreicht!"
+    }
+  },
+  "profile": {
+    "email": "E-Mail",
+    "name": "Name",
+    "password": {
+      "title": "Passwort",
+      "explanation": "Das Passwort kann nicht im Profil geändert werden. <br /> <0>Klicke hier zum Zurücksetzen.<0/>"
+    },
+    "verification": "Verifizierung",
+    "date": "Erstellungsdatum",
+    "description": "Beschreibung",
+    "comments": "Hier werden deine Kommentare angezeigt."
+  },
+  "user": {
+    "title": "Willkommen, Suchender",
+    "signUp": {
+      "username": "Benutzername",
+      "email": "E-Mail",
+      "name": "Name",
+      "password": "Passwort",
+      "passwordConfirm": "Passwort bestätigen",
+      "signUp": "Registrieren",
+      "signingUp": "Registrierung läuft...",
+      "helper": "Bereits ein Konto? <0>Einloggen<0/>",
+      "placeholder": {
+        "username": "Benutzername eingeben",
+        "email": "E-Mail eingeben",
+        "name": "Name eingeben",
+        "password": "Passwort eingeben",
+        "passwordConfirm": "Passwort erneut eingeben"
+      }
+    },
+    "login": {
+      "username": "Benutzername",
+      "password": "Passwort",
+      "login": "Einloggen",
+      "logging": "Einloggen...",
+      "helper": "Noch kein Konto? <0>Jetzt registrieren<0/>"
+    },
+    "verify": {
+      "error": "Ungültiger oder abgelaufener Link",
+      "success": "Erfolg! Dieses Fenster kann geschlossen werden",
+      "loading": "Token wird überprüft...",
+      "helper": "Schon verifiziert? <0>Zur Startseite<0/>"
+    },
+    "signSucces": {
+      "title": "Konto erstellt!",
+      "text": "Dein Konto wurde erfolgreich erstellt. Eine Bestätigungsmail wurde gesendet. Bitte klicke auf den Link in der Mail, um die Registrierung abzuschließen.",
+      "advice": "Nach der Bestätigung kannst du die App verwenden!",
+      "note": "Vergiss nicht, deinen Spam-Ordner zu überprüfen!",
+      "close": "Schließen"
+    }
+  },
+  "error": {
+    "error500": {
+      "code": 500,
+      "text": "Ein unerwarteter Fehler ist aufgetreten."
+    },
+    "error429": {
+      "code": 429,
+      "text": "Zu viele Anfragen"
+    },
+    "error404": {
+      "code": 404,
+      "text": "Seite nicht gefunden."
+    },
+    "error401": {
+      "code": 401,
+      "text": "Nicht autorisiert"
+    },
+    "error400": {
+      "code": 400,
+      "text": "Ungültige Eingabe"
+    },
+    "fetch": {
+      "fail": "Ein Fehler ist aufgetreten. Versuche es später erneut.",
+      "create": "Erstellung fehlgeschlagen. Bitte erneut versuchen!",
+      "duplicate": "Dieser {{item}} ist bereits vergeben",
+      "login": "Login fehlgeschlagen. Bitte später erneut versuchen!",
+      "update": "Aktualisierung fehlgeschlagen",
+      "delete": "Löschen fehlgeschlagen",
+      "load": "Laden fehlgeschlagen",
+      "post": "Veröffentlichung fehlgeschlagen"
+    },
+    "validation": {
+      "password": {
+        "match": "Passwörter stimmen nicht überein",
+        "length": "Passwort muss mindestens 8 Zeichen lang sein"
+      },
+      "email": "Bitte gib eine gültige E-Mail-Adresse ein",
+      "username": {
+        "length": "Benutzername muss mindestens 3 Zeichen lang sein"
+      }
+    },
+    "support": "Wenn das Problem weiterhin besteht, kontaktiere den Support"
+  },
+  "languages": {
+    "title": "Bitte wähle eine Sprache aus",
+    "array": [
+      "Usbekisch",
+      "Englisch",
+      "Chinesisch",
+      "Koreanisch",
+      "Russisch",
+      "Japanisch",
+      "Deutsch"
+    ],
+    "Uzbek": "Usbekisch",
+    "English": "Englisch",
+    "Chinese": "Chinesisch",
+    "Korean": "Koreanisch",
+    "Russian": "Russisch",
+    "Japanese": "Japanisch",
+    "German": "Deutsch"
+  }
+}

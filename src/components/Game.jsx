@@ -1,13 +1,16 @@
+// Import modules
 import { useEffect, useState, useRef } from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
+
+// Import components
 import playerImg from "../assets/webp/char.webp";
 import stoneImg from "../assets/webp/stone.webp";
 import bgImg from "../assets/webp/bg.webp";
 import bgDark from "../assets/webp/bg-dark.webp";
 import playerDark from "../assets/webp/player-dark.webp";
 import stoneDark from "../assets/webp/stone-dark.webp";
-import { useNavigate } from "react-router";
-import { useGeneralContext } from "../hooks/useGeneralContext";
-import { useTranslation } from "react-i18next";
 import "../assets/style/Game.css";
 
 function Game({ immortality = true, economy = false, superEconomy = false }) {
@@ -27,7 +30,7 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
 
   // Other things
   const mobile = window.innerWidth < 640;
-  const { dark } = useGeneralContext();
+  const dark = useSelector((state) => state.theme.dark);
   const navigate = useNavigate();
   const { t } = useTranslation();
 
@@ -35,13 +38,13 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
   const touchStartRef = useRef(null);
 
   const handleTouchStart = (e) => {
-    if (economy) return; //Case for Bg-Animation
+    if (economy) return; //Case for Background-Animation
     const touch = e.touches[0];
     touchStartRef.current = { x: touch.clientX, y: touch.clientY };
   };
 
   const handleTouchMove = (e) => {
-    if (economy) return; //Case for Bg-Animation
+    if (economy) return; //Case for Background-Animation
     if (!touchStartRef.current) return;
 
     const touch = e.touches[0];
@@ -50,21 +53,21 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
 
     // Move based on touch direction
     setPlayerXCord((prev) => prev + deltaX * 1); // Adjust speed factor
-    setPlayerYCord((prev) => prev + deltaY * 1); //Adjust speed factor
+    setPlayerYCord((prev) => prev + deltaY * 1); // Adjust speed factor
 
     // Update reference for smoother movement
     touchStartRef.current = { x: touch.clientX, y: touch.clientY };
   };
 
   const handleTouchEnd = () => {
-    if (economy) return; //Case for Bg-Animation
+    if (economy) return; //Case for Background-Animation
     touchStartRef.current = null; // Reset touch reference
   };
 
   // Movement on Pc
   useEffect(() => {
     if (mobile) return;
-    if (economy) return; //Case for Animation
+    if (economy) return; // Case for Animation
     function handleKeyDown(event) {
       if (!active) return;
       keysPressed.current.add(event.key);
@@ -108,9 +111,9 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
       cancelAnimationFrame(animationFrame.current);
     };
   }, [active, economy, mobile]);
-  //  Stone Spawns
+  // Stone Spawns
   useEffect(() => {
-    if (superEconomy) return; //Case for weak devices
+    if (superEconomy) return; // Case for weak devices
     function spawnStone() {
       if (!active) return;
       setStones((prev) => {
@@ -133,7 +136,7 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
   }, [active, superEconomy]);
   // Stone Falling
   useEffect(() => {
-    if (superEconomy) return; //Case for weak devices
+    if (superEconomy) return; // Case for weak devices
     function moveStones() {
       if (!active) return;
       setStones((prev) =>
@@ -151,7 +154,7 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
   useEffect(() => {
     if (economy) return;
     if (!active) return;
-    if (immortality) return; //Case for Animation not to end
+    if (immortality) return; // Case for Animation not to end
     function checkCollision() {
       for (const stone of stones) {
         if (
@@ -228,13 +231,13 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
             onClick={restartGame}
             className="px-4 py-2 bg-white text-black rounded cursor-pointer"
           >
-            {t("GamePageMsgRestart")}
+            {t("game.restart")}
           </button>
           <button
             onClick={() => navigate("/")}
             className="px-4 py-2 bg-white text-black rounded cursor-pointer"
           >
-            {t("OverallMsgGoHome")}
+            {t("general.home")}
           </button>
         </div>
       )}

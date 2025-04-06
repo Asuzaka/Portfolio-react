@@ -1,3 +1,4 @@
+// Import modules
 import { GoHome } from "react-icons/go";
 import { motion } from "motion/react";
 import { spring } from "motion";

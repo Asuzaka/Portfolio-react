@@ -1,62 +1,38 @@
+// Import modules
 import { useEffect, useState } from "react";
+import { loadLanguage } from "../utils/i18n/i18n";
 import { useTranslation } from "react-i18next";
-import Select from "react-select";
-import us from "../assets/svg/us.svg";
-import ru from "../assets/svg/ru.svg";
-import uz from "../assets/svg/uz.svg";
-const options = [
-  {
-    value: "en",
-    label: (
-      <>
-        <img src={us} width="20" />
-      </>
-    ),
-  },
-  {
-    value: "ru",
-    label: (
-      <>
-        <img src={ru} width="20" />
-      </>
-    ),
-  },
-  {
-    value: "uz",
-    label: (
-      <>
-        <img src={uz} width="20" />
-      </>
-    ),
-  },
-];
+import useLanguages from "../data/languages";
+
+// Import components
+import Modal from "./ui/Modal";
+import LanguagesOnSelect from "./ui/LanguagesOnSelect";
 
 function LanguageSelection() {
-  const { i18n } = useTranslation();
-  const [selectedOption, setSelectedOption] = useState(null);
+  const { t } = useTranslation();
+  const languages = useLanguages(t("languages.array", { returnObjects: true }));
+  const [selectedLang, setSelectedLang] = useState(() => {
+    return (
+      languages.find((el) => el.code == JSON.parse(localStorage.getItem("lng")))
+        ?.flag || languages[1].flag
+    );
+  });
 
   useEffect(() => {
-    if (selectedOption !== null) {
-      i18n.changeLanguage(selectedOption.value);
-    }
-  }, [selectedOption, i18n]);
+    loadLanguage(JSON.parse(localStorage.getItem("lng")));
+  }, []);
 
   return (
-    <>
-      <Select
-        defaultValue={
-          i18n.language === "en"
-            ? options[0]
-            : i18n.language === "ru"
-            ? options[1]
-            : i18n.language === "uz"
-            ? options[2]
-            : null
-        }
-        options={options}
-        onChange={setSelectedOption}
-      />
-    </>
+    <Modal>
+      <Modal.Open opens="language-select">
+        <button className="bg-white rounded-full p-0.5 cursor-pointer">
+          {selectedLang}
+        </button>
+      </Modal.Open>
+      <Modal.Window name="language-select">
+        <LanguagesOnSelect setSelectedLang={setSelectedLang} />
+      </Modal.Window>
+    </Modal>
   );
 }
 

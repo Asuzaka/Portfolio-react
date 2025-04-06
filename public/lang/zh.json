@@ -1,0 +1,198 @@
+{
+  "general": {
+    "back": "返回",
+    "play": "播放",
+    "comment": "评论",
+    "profile": "个人资料",
+    "home": "主页",
+    "save": "保存",
+    "saving": "保存中..."
+  },
+  "homepage": {
+    "title": "欢迎来到我的作品集",
+    "text": "我是一名初级网页开发人员，擅长 JavaScript 和 Go，已完成超过 20 个项目，专注于响应式和交互式设计。（数据不准确）",
+    "button1": "查看我的项目",
+    "button2": "更多关于我"
+  },
+  "about": {
+    "title": "成就",
+    "fullName": "全名",
+    "education": "教育背景",
+    "technology": "技术",
+    "profession": "职业",
+    "socials": "社交",
+    "age": "年龄",
+    "languages": "语言",
+    "experience": "商业经验",
+    "wpm": "打字速度（WPM）",
+    "values": {
+      "fullName": "Yuldashev Khurshid",
+      "education": "高中",
+      "technology": "React, NodeJs",
+      "profession": "前端开发",
+      "age": "18岁，出生于2006年",
+      "languages": "母语乌兹别克语，<br />俄语 C1，<br />英语 B2（认证）",
+      "experience": "暂无经验",
+      "wpm": "约 65"
+    }
+  },
+  "works": {
+    "list": ["计算器", "绿洲", "作品集", "占位", "占位", "占位"],
+    "calculator": {
+      "theme": "一个计算器",
+      "text": "#codeComment，基于 React，这个项目的代码写得很糟糕，因为我尝试同时使用 <0>UseReducer</0> 和 <1>UseState</1>。我不会再犯这个错误，并将其保留下来作为未来的提醒。代码大约花了 5 个小时。",
+      "date": "2024年12月32日 下午12:32"
+    },
+    "oasis": {
+      "theme": "狂野绿洲",
+      "text": "#CodeComment，基于 Next，这是我第一个全栈项目，数据库使用 <0>Supabase</0>，登录使用 <1>Auth js</1>。这是课程结束时的项目，我们的老师 <2>Jonas Schmedtmann</2> 讲解了每一步和所有可能的选择，并说明我们为何选择某项技术。",
+      "date": "2024年12月28日 下午7:03"
+    },
+    "portfolio": {
+      "theme": "作品集本身",
+      "text": "#CodeComment，所以这是我的作品集，如你所见一切就是这样。为了方便地介绍自己和我的项目，我创建了它。你现在看到的是版本：3.1.0，除 3.0.0 版本外，早期版本都不存在。我从 v3 开始追踪更新日志和版本。",
+      "date": "2025年2月13日 下午1:31"
+    },
+    "dummy": {
+      "theme": "占位内容",
+      "text": "#CodeComment，此部分仅用于填补空白以提升美观度，别无其他"
+    }
+  },
+  "game": {
+    "over": "游戏结束",
+    "restart": "重新开始"
+  },
+  "comments": {
+    "welcome": {
+      "title": "欢迎访客！",
+      "text": "如果你来到此页面并正在阅读，感谢你的努力。如果你愿意分享反馈或建议，请随时发表评论。",
+      "tip": "提示：你可以评论作品集评分、可能的修复、最佳实践和发现的错误。也欢迎你自我介绍！"
+    },
+    "comment": {
+      "placeholder": "分享你的想法...",
+      "post": "发表评论",
+      "posting": "正在发布...",
+      "reply": {
+        "single": "回复",
+        "plural": "条回复"
+      },
+      "noMore": "没有更多内容了",
+      "load": "加载更多",
+      "end": "你已到达结尾！"
+    }
+  },
+  "profile": {
+    "email": "电子邮箱",
+    "name": "姓名",
+    "password": {
+      "title": "密码",
+      "explanation": "你无法通过资料设置更改密码。<br /><0>点击此处重置密码<0/>"
+    },
+    "verification": "验证",
+    "date": "创建日期",
+    "description": "简介",
+    "comments": "这是评论的占位区域。"
+  },
+  "user": {
+    "title": "欢迎，冒险者",
+    "signUp": {
+      "username": "用户名",
+      "email": "电子邮箱",
+      "name": "姓名",
+      "password": "密码",
+      "passwordConfirm": "确认密码",
+      "signUp": "注册",
+      "signingUp": "正在注册...",
+      "helper": "已有账户？<0>登录<0/>",
+      "placeholder": {
+        "username": "输入你的用户名",
+        "email": "输入你的电子邮箱",
+        "name": "输入你的姓名",
+        "password": "输入你的密码",
+        "passwordConfirm": "再次输入你的密码"
+      }
+    },
+    "login": {
+      "username": "用户名",
+      "password": "密码",
+      "login": "登录",
+      "logging": "登录中...",
+      "helper": "还没有账户？<0>注册<0/>"
+    },
+    "verify": {
+      "error": "链接无效或已过期",
+      "success": "成功！你可以关闭此窗口",
+      "loading": "正在验证令牌...",
+      "helper": "已经验证？<0>主页<0/>"
+    },
+    "signSucces": {
+      "title": "账户已创建！",
+      "text": "我们已成功创建你的账户，并发送了一封验证邮件到你的邮箱。请打开邮件中的链接验证你的账户。",
+      "advice": "验证账户后你就可以开始探索啦！",
+      "note": "别忘了检查垃圾邮箱！",
+      "close": "关闭"
+    }
+  },
+  "error": {
+    "error500": {
+      "code": 500,
+      "text": "发生了意外错误。"
+    },
+    "error429": {
+      "code": 429,
+      "text": "请求过多"
+    },
+    "error404": {
+      "code": 404,
+      "text": "你正在寻找的页面不存在。"
+    },
+    "error401": {
+      "code": 401,
+      "text": "未授权"
+    },
+    "error400": {
+      "code": 400,
+      "text": "用户输入错误"
+    },
+    "fetch": {
+      "fail": "发生错误，请稍后再试",
+      "create": "创建失败，请稍后再试！",
+      "duplicate": "此 {{item}} 已被占用",
+      "login": "登录失败，请稍后再试！",
+      "update": "更新失败",
+      "delete": "删除失败",
+      "load": "加载失败",
+      "post": "发布失败"
+    },
+    "validation": {
+      "password": {
+        "match": "密码不匹配",
+        "length": "密码长度不能少于 8 个字符"
+      },
+      "email": "请输入有效的电子邮箱地址",
+      "username": {
+        "length": "用户名长度至少为 3 个字符"
+      }
+    },
+    "support": "如果问题仍然存在，请联系支持"
+  },
+  "languages": {
+    "title": "请选择支持的语言",
+    "array": [
+      "乌兹别克语",
+      "英语",
+      "中文",
+      "韩语",
+      "俄语",
+      "日语",
+      "德语"
+    ],
+    "Uzbek": "乌兹别克语",
+    "English": "英语",
+    "Chinese": "中文",
+    "Korean": "韩语",
+    "Russian": "俄语",
+    "Japanese": "日语",
+    "German": "德语"
+  }
+}

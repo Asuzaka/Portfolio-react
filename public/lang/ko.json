@@ -1,0 +1,198 @@
+{
+  "general": {
+    "back": "뒤로",
+    "play": "재생",
+    "comment": "댓글",
+    "profile": "프로필",
+    "home": "홈",
+    "save": "저장",
+    "saving": "저장 중..."
+  },
+  "homepage": {
+    "title": "내 포트폴리오에 오신 것을 환영합니다",
+    "text": "저는 JavaScript와 Go에 능숙한 주니어 웹 개발자입니다. 20개 이상의 프로젝트를 완성했고, 반응형 및 인터랙티브 디자인에 강점이 있습니다. (정확한 수치는 아닙니다)",
+    "button1": "프로젝트 보기",
+    "button2": "자세히 보기"
+  },
+  "about": {
+    "title": "이력",
+    "fullName": "성명",
+    "education": "학력",
+    "technology": "기술",
+    "profession": "직업",
+    "socials": "소셜",
+    "age": "나이",
+    "languages": "언어",
+    "experience": "업계 경험",
+    "wpm": "타자 속도 (WPM)",
+    "values": {
+      "fullName": "Khursid Yuldashev",
+      "education": "고등학교 졸업",
+      "technology": "React, NodeJs",
+      "profession": "프론트엔드 웹 개발자",
+      "age": "18세, 2006년생",
+      "languages": "모국어: 우즈베크어, <br />러시아어 C1, <br />영어 B2 (공식 인증)",
+      "experience": "경험 없음",
+      "wpm": "약 65"
+    }
+  },
+  "works": {
+    "list": ["계산기", "오아시스", "포트폴리오", "더미", "더미", "더미"],
+    "calculator": {
+      "theme": "계산기 앱",
+      "text": "#codeComment, React로 제작. <0>UseReducer</0>와 <1>UseState</1>를 동시에 시도하면서 코드가 매우 나빠졌습니다. 이것은 과거의 실수이며, 다음에는 이런 실수를 하지 않겠다는 의미로 그대로 남겨둡니다. 총 소요 시간은 약 5시간입니다.",
+      "date": "2024년 12월 32일 오후 12:32"
+    },
+    "oasis": {
+      "theme": "더 와일드 오아시스",
+      "text": "#CodeComment, Next로 제작. 제 첫 풀스택 프로젝트이며, <0>Supabase</0>를 데이터베이스로, <1>Auth js</1>를 인증에 사용했습니다. 이는 코스 최종 프로젝트이며, 강사 <2>Jonas Schmedtmann</2>가 모든 단계와 선택 이유를 설명했습니다.",
+      "date": "2024년 12월 28일 오후 7:03"
+    },
+    "portfolio": {
+      "theme": "포트폴리오 본문",
+      "text": "#CodeComment, 이 포트폴리오는 저 자신과 제 작업을 소개하기 위해 제작되었습니다. 현재 버전은 3.1.0이며, 이전 버전(3.0.0 이전)은 존재하지 않습니다. 3버전부터 변경 로그를 관리하고 있습니다.",
+      "date": "2025년 2월 13일 오후 1:31"
+    },
+    "dummy": {
+      "theme": "더미",
+      "text": "#CodeComment, 단순히 공간을 채우기 위해 추가된 섹션입니다. 실질적인 의미는 없습니다."
+    }
+  },
+  "game": {
+    "over": "게임 오버",
+    "restart": "다시 시작"
+  },
+  "comments": {
+    "welcome": {
+      "title": "방문자 여러분, 환영합니다!",
+      "text": "이 페이지에 와서 읽어주셔서 감사합니다. 제 포트폴리오에 대한 피드백이나 아이디어가 있다면 언제든 댓글을 남겨주세요.",
+      "tip": "팁: 포트폴리오 평가, 개선 제안, 모범 사례, 버그 제보, 자기소개 등 자유롭게 댓글을 남겨주세요!"
+    },
+    "comment": {
+      "placeholder": "생각을 공유해주세요...",
+      "post": "댓글 작성",
+      "posting": "작성 중...",
+      "reply": {
+        "single": "답글",
+        "plural": "개의 답글"
+      },
+      "noMore": "더 이상 없음",
+      "load": "더 보기",
+      "end": "마지막까지 도달했습니다!"
+    }
+  },
+  "profile": {
+    "email": "이메일",
+    "name": "이름",
+    "password": {
+      "title": "비밀번호",
+      "explanation": "비밀번호는 프로필 설정에서 변경할 수 없습니다.<br /><0>여기를 클릭해 재설정하세요.<0/>"
+    },
+    "verification": "인증",
+    "date": "계정 생성일",
+    "description": "설명",
+    "comments": "여기는 댓글용 더미 텍스트입니다."
+  },
+  "user": {
+    "title": "환영합니다, 모험가여",
+    "signUp": {
+      "username": "사용자 이름",
+      "email": "이메일",
+      "name": "이름",
+      "password": "비밀번호",
+      "passwordConfirm": "비밀번호 확인",
+      "signUp": "가입하기",
+      "signingUp": "가입 중...",
+      "helper": "이미 계정이 있으신가요? <0>로그인<0/>",
+      "placeholder": {
+        "username": "사용자 이름 입력",
+        "email": "이메일 입력",
+        "name": "이름 입력",
+        "password": "비밀번호 입력",
+        "passwordConfirm": "비밀번호 재입력"
+      }
+    },
+    "login": {
+      "username": "사용자 이름",
+      "password": "비밀번호",
+      "login": "로그인",
+      "logging": "로그인 중...",
+      "helper": "계정이 없으신가요? <0>지금 가입하기<0/>"
+    },
+    "verify": {
+      "error": "링크가 유효하지 않거나 만료되었습니다",
+      "success": "성공! 이 창을 닫아주세요",
+      "loading": "토큰 확인 중...",
+      "helper": "이미 인증하셨나요? <0>홈으로<0/>"
+    },
+    "signSucces": {
+      "title": "계정 생성 완료!",
+      "text": "계정이 성공적으로 생성되었습니다. 인증 메일을 보냈으니, 링크를 클릭하여 계정을 활성화해주세요.",
+      "advice": "인증 후 바로 사용하실 수 있습니다!",
+      "note": "스팸 메일함도 꼭 확인해주세요!",
+      "close": "닫기"
+    }
+  },
+  "error": {
+    "error500": {
+      "code": 500,
+      "text": "예기치 않은 오류가 발생했습니다."
+    },
+    "error429": {
+      "code": 429,
+      "text": "요청이 너무 많습니다"
+    },
+    "error404": {
+      "code": 404,
+      "text": "페이지를 찾을 수 없습니다"
+    },
+    "error401": {
+      "code": 401,
+      "text": "인증되지 않았습니다"
+    },
+    "error400": {
+      "code": 400,
+      "text": "잘못된 입력입니다"
+    },
+    "fetch": {
+      "fail": "오류가 발생했습니다. 나중에 다시 시도해주세요",
+      "create": "생성 실패. 나중에 다시 시도해주세요!",
+      "duplicate": "이 {{item}}은 이미 사용 중입니다",
+      "login": "로그인 실패. 다시 시도해주세요!",
+      "update": "업데이트 실패",
+      "delete": "삭제 실패",
+      "load": "불러오기 실패",
+      "post": "업로드 실패"
+    },
+    "validation": {
+      "password": {
+        "match": "비밀번호가 일치하지 않습니다",
+        "length": "비밀번호는 8자 이상이어야 합니다"
+      },
+      "email": "유효한 이메일 주소를 입력해주세요",
+      "username": {
+        "length": "사용자 이름은 3자 이상이어야 합니다"
+      }
+    },
+    "support": "문제가 지속되면 지원팀에 문의해주세요"
+  },
+  "languages": {
+    "title": "지원되는 언어 중 하나를 선택하세요",
+    "array": [
+      "우즈베크어",
+      "영어",
+      "중국어",
+      "한국어",
+      "러시아어",
+      "일본어",
+      "독일어"
+    ],
+    "Uzbek": "우즈베크어",
+    "English": "영어",
+    "Chinese": "중국어",
+    "Korean": "한국어",
+    "Russian": "러시아어",
+    "Japanese": "일본어",
+    "German": "독일어"
+  }
+}

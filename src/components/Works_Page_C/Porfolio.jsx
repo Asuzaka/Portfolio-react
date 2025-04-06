@@ -1,20 +1,20 @@
+// Import modules
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router";
+import { Link } from "react-router";
 
 function Porfolio() {
-  const navigate = useNavigate();
   const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-5 text-xl">
-      <a
+      <Link
+        to="/"
         className="text-center cursor-pointer text-xl lg:text-3xl underline text-white"
-        onClick={() => navigate("/")}
       >
-        {t("Portfoliostitle")}
-      </a>
-      <p>{t("PortfoliosContent")}</p>
+        {t("works.portfolio.theme")}
+      </Link>
+      <p>{t("works.portfolio.text")}</p>
 
-      <p>{t("PortfoliosDate")}</p>
+      <p>[{t("works.portfolio.date")}]</p>
     </div>
   );
 }

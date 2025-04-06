@@ -1,3 +1,4 @@
+// Import components
 import LanguageSelection from "./LanguageSelection";
 import Logo from "./ui/Logo";
 import ThemeSwitch from "./ui/ThemeSwitch";
