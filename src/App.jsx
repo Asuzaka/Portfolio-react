@@ -8,7 +8,7 @@ import Game from "./components/Game";
 import Works from "./pages/Works";
 import { WeakDeviceProvider } from "./hooks/WeakDeviceContext";
 import { useDispatch } from "react-redux";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import { useEffect } from "react";
 import { fetchUser } from "./store/UserSlice";
 import Signup from "./pages/Signup";
