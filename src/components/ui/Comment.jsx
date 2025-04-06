@@ -8,7 +8,7 @@ import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 
 // Import components
-import Reply from "./reply";
+import Reply from "./Reply";
 import NewReply from "./newReply";
 import MiniLoading from "./MiniLoading";
 
