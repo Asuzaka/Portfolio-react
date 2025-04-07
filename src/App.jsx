@@ -1,16 +1,17 @@
+// Import modules
 import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router";
+import { WeakDeviceProvider } from "./hooks/WeakDeviceContext";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { fetchUser } from "./store/UserSlice";
+// Import components
 import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import Layout from "./components/Layout";
 import "./utils/i18n/i18n";
-import Game from "./components/Game";
 import Works from "./pages/Works";
-import { WeakDeviceProvider } from "./hooks/WeakDeviceContext";
-import { useDispatch } from "react-redux";
 import Login from "./pages/Login";
-import { useEffect } from "react";
-import { fetchUser } from "./store/UserSlice";
 import Signup from "./pages/Signup";
 import Verify from "./pages/Verify";
 import Profile from "./pages/Profile";
@@ -18,6 +19,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import NotFound from "./pages/NotFoundPage";
 import Comments from "./pages/Comments";
 import ErrorPage from "./pages/ErrorPage";
+import GamePage from "./pages/GamePage";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -55,7 +57,7 @@ export default function App() {
             <Route path="/error" element={<ErrorPage />} />
           </Route>
           {/* Pure Routes without Layout */}
-          <Route path="/game" element={<Game immortality={false} />} />
+          <Route path="/game" element={<GamePage />} />
           {/* Not found 404 Error page */}
           <Route
             path="*"

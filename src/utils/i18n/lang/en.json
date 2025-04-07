@@ -60,7 +60,10 @@
   },
   "game": {
     "over": "Game Over",
-    "restart": "Restart"
+    "restart": "Restart",
+    "yourScore" : "Your score",
+    "menu": "Menu",
+    "start" : "Start Game"
   },
   "comments": {
     "welcome": {

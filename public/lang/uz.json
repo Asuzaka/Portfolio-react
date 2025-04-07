@@ -1,7 +1,7 @@
 {
   "general": {
     "back": "Orqaga",
-    "play": "O'ynatish",
+    "play": "O'ynash",
     "comment": "Izoh",
     "profile": "Profil",
     "home": "Bosh sahifa",
@@ -60,7 +60,10 @@
   },
   "game": {
     "over": "O'yin tugadi",
-    "restart": "Qayta boshlash"
+    "restart": "Qayta boshlash",
+    "yourScore": "Sizning hisobingiz",
+    "menu": "Menyu",
+    "start": "O'yinni boshlash"
   },
   "comments": {
     "welcome": {

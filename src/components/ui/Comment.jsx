@@ -218,7 +218,7 @@ function Comment({ el, reFetchExisting, formRef, setComment1 }) {
             value={content}
             onChange={handleContentChange}
             disabled={!editMode}
-            className={`w-full resize-none bg-transparent text-white font-medium p-2 rounded-lg focus:outline-none ${
+            className={`scroll-hidden w-full resize-none bg-transparent text-white font-medium p-2 rounded-lg focus:outline-none ${
               editMode ? "border border-white" : ""
             }`}
           />

@@ -60,7 +60,10 @@
   },
   "game": {
     "over": "Spiel vorbei",
-    "restart": "Neu starten"
+    "restart": "Neustart",
+    "yourScore": "Dein Punktestand",
+    "menu": "Menü",
+    "start": "Spiel starten"
   },
   "comments": {
     "welcome": {

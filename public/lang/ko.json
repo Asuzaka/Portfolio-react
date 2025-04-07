@@ -60,7 +60,10 @@
   },
   "game": {
     "over": "게임 오버",
-    "restart": "다시 시작"
+    "restart": "다시 시작",
+    "yourScore": "당신의 점수",
+    "menu": "메뉴",
+    "start": "게임 시작"
   },
   "comments": {
     "welcome": {

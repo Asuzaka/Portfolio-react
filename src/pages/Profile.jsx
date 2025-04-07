@@ -80,10 +80,10 @@ function Profile() {
     <div className="flex flex-col lg:flex gap-10 text-white px-2 sm:px-0">
       <div className="flex flex-col lg:flex-row gap-10">
         {/* User Data */}
-        <div className="grid grid-cols-3 rounded-3xl p-10 gap-x-10 bg-opacity-20 backdrop-blur-md shadow-lg border border-white border-opacity-30">
+        <div className="grid grid-rows-3 sm:grid-cols-3 rounded-3xl p:5 sm:p-10 gap-x-10 bg-opacity-20 backdrop-blur-md shadow-lg border border-white border-opacity-30 place-items-center">
           {/* Users-avatar */}
-          <div className="flex items-center justify-center">
-            <div className="flex flex-col gap-3 items-center">
+          <div className="flex">
+            <div className="flex flex-col gap-3 items-center justify-center">
               <img
                 className="size-24 rounded-full cursor-pointer"
                 src={`${import.meta.env.VITE_BACKEND_URL}/public/users/${
@@ -104,7 +104,7 @@ function Profile() {
             </div>
           </div>
           {/* Users-information */}
-          <div className="col-span-2 flex flex-col gap-2">
+          <div className="row-span-2 sm:col-span-2 flex flex-col gap-2">
             <div className="flex flex-col gap-0.5">
               <label className="text-sm mb-2" htmlFor="email">
                 {t("profile.email")}:
@@ -141,19 +141,19 @@ function Profile() {
           </div>
         </div>
         {/* Description */}
-        <div className="rounded-3xl p-10 bg-opacity-20 backdrop-blur-md shadow-lg border border-white border-opacity-30 min-w-[350px]">
-          <div className="flex flex-col gap-0.5">
+        <div className="rounded-3xl p:5 sm:p-10 bg-opacity-20 backdrop-blur-md shadow-lg border border-white border-opacity-30  ">
+          <div className="flex flex-col gap-0.5 py-2 items-center">
             <label>{t("profile.description")}</label>
             <textarea
-              className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white resize-none"
+              className="w-[90%] sm:w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white resize-none"
               value={dataForm.description}
               onChange={handleChange}
               name="description"
               rows="4"
             />
           </div>
-          <div className="mt-3">
-            <PrimaryButton onClick={handleSave} addStyle="w-full">
+          <div className="mt-3 mb-3 w-[256px] mx-auto">
+            <PrimaryButton onClick={handleSave} addStyle="sm:w-full">
               {isLoading ? t("general.saving") : t("general.save")}
             </PrimaryButton>
           </div>
@@ -161,8 +161,8 @@ function Profile() {
         </div>
         {/* Users Comments */}
       </div>
-      <div className="rounded-3xl p-10 bg-opacity-20 backdrop-blur-md shadow-lg border border-white border-opacity-30">
-        <h1>{t("profile.comments")}</h1>
+      <div className="rounded-3xl p:5 sm:p-10 bg-opacity-20 backdrop-blur-md shadow-lg border border-white border-opacity-30">
+        <h1 className="my-2 mx-3">{t("profile.comments")}</h1>
       </div>
     </div>
   );

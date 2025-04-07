@@ -13,8 +13,14 @@ import playerDark from "../assets/webp/player-dark.webp";
 import stoneDark from "../assets/webp/stone-dark.webp";
 import "../assets/style/Game.css";
 
-function Game({ immortality = true, economy = false, superEconomy = false }) {
+function Game({
+  immortality = true,
+  economy = false,
+  superEconomy = false,
+  setIsPlaying = () => {},
+}) {
   // Game Logic
+  const [score, setScore] = useState(0);
   const [playerXCord, setPlayerXCord] = useState(window.innerWidth / 2);
   const [playerYCord, setPlayerYCord] = useState(window.innerHeight - 70);
   const [active, setActive] = useState(true);
@@ -179,19 +185,35 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
     setPlayerYCord(window.innerHeight - 70);
     setStones([]);
     setActive(true);
+    setScore(0);
   }
+
+  useEffect(() => {
+    if (!active) return;
+    const scoreInterval = setInterval(() => {
+      setScore((prev) => prev + 1); // Increment the score every second
+    }, 1000);
+
+    return () => clearInterval(scoreInterval);
+  }, [active]);
 
   return (
     <div
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      className="h-dvh absolute top-0 left-0 z-[-1] w-full  bg-black overflow-hidden "
+      className="h-dvh absolute top-0 left-0 z-[20] w-full  bg-black overflow-hidden "
       style={{
         backgroundImage: `url(${dark ? bgDark : bgImg})`,
         backgroundSize: "cover",
       }}
     >
+      {/* Score Display - Inside the Game */}
+      {active && (
+        <div className="absolute top-0 left-0 z-50 w-full text-white font-mono text-xl p-4">
+          Score: {score}
+        </div>
+      )}
       {/* Player */}
       <img
         src={dark ? playerDark : playerImg}
@@ -226,19 +248,30 @@ function Game({ immortality = true, economy = false, superEconomy = false }) {
       {/* Game Over Screen */}
       {!active && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80 text-white gap-5 font-mono">
-          <h1 className="text-3xl mb-4"> {t("GamePageMsgGameOver")}</h1>
-          <button
-            onClick={restartGame}
-            className="px-4 py-2 bg-white text-black rounded cursor-pointer"
-          >
-            {t("game.restart")}
-          </button>
-          <button
-            onClick={() => navigate("/")}
-            className="px-4 py-2 bg-white text-black rounded cursor-pointer"
-          >
-            {t("general.home")}
-          </button>
+          <h1 className="text-3xl"> {t("game.over")}</h1>
+          <h6 className="text-lg">
+            {t("game.yourScore")}: {score}
+          </h6>
+          <div className="flex flex-col gap-2">
+            <button
+              onClick={restartGame}
+              className="px-4 py-2 bg-white text-black rounded cursor-pointer"
+            >
+              {t("game.restart")}
+            </button>
+            <button
+              onClick={() => navigate("/")}
+              className="px-4 py-2 bg-white text-black rounded cursor-pointer"
+            >
+              {t("general.home")}
+            </button>
+            <button
+              className="px-4 py-2 bg-white text-black rounded cursor-pointer"
+              onClick={() => setIsPlaying(false)}
+            >
+              {t("game.menu")}
+            </button>
+          </div>
         </div>
       )}
     </div>

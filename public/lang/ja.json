@@ -60,7 +60,10 @@
   },
   "game": {
     "over": "ゲームオーバー",
-    "restart": "再開"
+    "restart": "再開",
+    "yourScore": "あなたのスコア",
+    "menu": "メニュー",
+    "start": "ゲーム開始"
   },
   "comments": {
     "welcome": {

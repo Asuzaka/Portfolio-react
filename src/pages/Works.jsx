@@ -40,7 +40,7 @@ function Works() {
         </div>
       </div>
       {/* Navigating buttons */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-8 text-md">
+      <div className="grid grid-rows-1 sm:grid-rows-2 sm:grid-cols-2 xl:grid-cols-4 gap-10">
         <PrimaryButton
           onClick={() => {
             navigate("/");
