@@ -20,6 +20,8 @@ import NotFound from "./pages/NotFoundPage";
 import Comments from "./pages/Comments";
 import ErrorPage from "./pages/ErrorPage";
 import GamePage from "./pages/GamePage";
+import ResetPassword from "./pages/ResetPassword";
+import ForgetPasword from "./pages/ForgetPassword";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -37,6 +39,8 @@ export default function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/verify/:token" element={<Verify />} />
+            <Route path="/resetPassword/:token" element={<ResetPassword />} />
+            <Route path="/forgetPassword" element={<ForgetPasword />} />
             <Route
               path="/profile"
               element={

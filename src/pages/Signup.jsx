@@ -5,7 +5,7 @@ import { Trans, useTranslation } from "react-i18next";
 
 // Import components
 import PrimaryButton from "../components/ui/PrimaryButton";
-import SignupSuccess from "../components/SignupSucces";
+import SignupSuccess from "../components/SignupSuccess";
 
 function Signup() {
   // Component Logic
@@ -99,159 +99,144 @@ function Signup() {
       setIsLoading(false);
     }
   };
-  return (
-    <>
-      {success ? (
-        <SignupSuccess />
-      ) : (
-        <div className="flex-1 flex items-center justify-center mt-[20%] md:mt-[40%] lg:mt-[50%]">
-          <div className="bg-opacity-20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg w-80 sm:w-96 border border-white border-opacity-30">
-            <h2 className="text-center text-white text-2xl font-bold mb-4">
-              {t("user.title")}
-            </h2>
-            <form>
-              {/* Username */}
-              <div className="mb-4">
-                <label
-                  className="block text-white text-sm mb-2"
-                  htmlFor="username"
-                >
-                  {t("user.signUp.username")}
-                </label>
-                <input
-                  disabled={isLoading}
-                  name="username"
-                  type="text"
-                  id="username"
-                  value={FormData.username}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
-                  placeholder={t("user.signUp.placeholder.username")}
-                />
-                {error?.username && (
-                  <p className="text-red-400 text-center">{error.username}</p>
-                )}
-              </div>
-
-              {/* Email */}
-              <div className="mb-4">
-                <label
-                  className="block text-white text-sm mb-2"
-                  htmlFor="email"
-                >
-                  {t("user.signUp.email")}
-                </label>
-                <input
-                  disabled={isLoading}
-                  value={formData.email}
-                  onChange={handleChange}
-                  name="email"
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
-                  placeholder={t("user.signUp.placeholder.email")}
-                />
-                {error?.email && (
-                  <p className="text-red-400 text-center">{error.email}</p>
-                )}
-              </div>
-
-              {/* Name */}
-              <div className="mb-4">
-                <label className="block text-white text-sm mb-2" htmlFor="name">
-                  {t("user.signUp.name")}
-                </label>
-                <input
-                  disabled={isLoading}
-                  value={formData.name}
-                  onChange={handleChange}
-                  type="text"
-                  name="name"
-                  id="name"
-                  className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
-                  placeholder={t("user.signUp.placeholder.name")}
-                />
-                {error?.name && (
-                  <p className="text-red-400 text-center">{error.name}</p>
-                )}
-              </div>
-
-              {/* Password */}
-              <div className="mb-4">
-                <label
-                  className="block text-white text-sm mb-2"
-                  htmlFor="password"
-                >
-                  {t("user.signUp.password")}
-                </label>
-                <input
-                  name="password"
-                  disabled={isLoading}
-                  value={formData.password}
-                  onChange={handleChange}
-                  type="password"
-                  id="password"
-                  className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
-                  placeholder={t("user.signUp.placeholder.password")}
-                />
-                {error?.password && (
-                  <p className="text-red-400 text-center">{error.password}</p>
-                )}
-              </div>
-
-              {/* Password Confirm */}
-              <div className="mb-4">
-                <label
-                  className="block text-white text-sm mb-2"
-                  htmlFor="passwordConfirm"
-                >
-                  {t("user.signUp.passwordConfirm")}
-                </label>
-                <input
-                  name="passwordConfirm"
-                  disabled={isLoading}
-                  value={formData.passwordConfirm}
-                  onChange={handleChange}
-                  type="password"
-                  id="passwordConfirm"
-                  className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
-                  placeholder={t("user.signUp.placeholder.passwordConfirm")}
-                />
-                {error?.passwordConfirm && (
-                  <p className="text-red-400 text-center">
-                    {error.passwordConfirm}
-                  </p>
-                )}
-              </div>
-
-              {/* Submit */}
-              <PrimaryButton
-                onClick={handleEnter}
-                addStyle="w-full"
-                disabled={isLoading}
-              >
-                {isLoading
-                  ? t("user.signUp.signingUp")
-                  : t("user.signUp.signUp")}
-              </PrimaryButton>
-            </form>
-            {/* Already Account Link */}
-            <p className="mt-4 text-center text-white text-sm">
-              <Trans
-                i18nKey="user.signUp.helper"
-                components={[
-                  <Link
-                    key={0}
-                    className="text-emerald-900 hover:underline"
-                    to="/login"
-                  />,
-                ]}
-              />
-            </p>
+  return success ? (
+    <SignupSuccess />
+  ) : (
+    <div className="flex-1 flex items-center justify-center mt-[20%] md:mt-[40%] lg:mt-[50%]">
+      <div className="bg-opacity-20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg w-80 sm:w-96 border border-white border-opacity-30">
+        <h2 className="text-center text-white text-2xl font-bold mb-4">
+          {t("user.title")}
+        </h2>
+        <form>
+          {/* Username */}
+          <div className="mb-4">
+            <label className="block text-white text-sm mb-2" htmlFor="username">
+              {t("user.signUp.username")}
+            </label>
+            <input
+              disabled={isLoading}
+              name="username"
+              type="text"
+              id="username"
+              value={FormData.username}
+              onChange={handleChange}
+              className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
+              placeholder={t("user.signUp.placeholder.username")}
+            />
+            {error?.username && (
+              <p className="text-red-400 text-center">{error.username}</p>
+            )}
           </div>
-        </div>
-      )}
-    </>
+
+          {/* Email */}
+          <div className="mb-4">
+            <label className="block text-white text-sm mb-2" htmlFor="email">
+              {t("user.signUp.email")}
+            </label>
+            <input
+              disabled={isLoading}
+              value={formData.email}
+              onChange={handleChange}
+              name="email"
+              type="email"
+              id="email"
+              className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
+              placeholder={t("user.signUp.placeholder.email")}
+            />
+            {error?.email && (
+              <p className="text-red-400 text-center">{error.email}</p>
+            )}
+          </div>
+
+          {/* Name */}
+          <div className="mb-4">
+            <label className="block text-white text-sm mb-2" htmlFor="name">
+              {t("user.signUp.name")}
+            </label>
+            <input
+              disabled={isLoading}
+              value={formData.name}
+              onChange={handleChange}
+              type="text"
+              name="name"
+              id="name"
+              className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
+              placeholder={t("user.signUp.placeholder.name")}
+            />
+            {error?.name && (
+              <p className="text-red-400 text-center">{error.name}</p>
+            )}
+          </div>
+
+          {/* Password */}
+          <div className="mb-4">
+            <label className="block text-white text-sm mb-2" htmlFor="password">
+              {t("user.signUp.password")}
+            </label>
+            <input
+              name="password"
+              disabled={isLoading}
+              value={formData.password}
+              onChange={handleChange}
+              type="password"
+              id="password"
+              className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
+              placeholder={t("user.signUp.placeholder.password")}
+            />
+            {error?.password && (
+              <p className="text-red-400 text-center">{error.password}</p>
+            )}
+          </div>
+
+          {/* Password Confirm */}
+          <div className="mb-4">
+            <label
+              className="block text-white text-sm mb-2"
+              htmlFor="passwordConfirm"
+            >
+              {t("user.signUp.passwordConfirm")}
+            </label>
+            <input
+              name="passwordConfirm"
+              disabled={isLoading}
+              value={formData.passwordConfirm}
+              onChange={handleChange}
+              type="password"
+              id="passwordConfirm"
+              className="w-full px-4 py-2 bg-emerald-900/20 bg-opacity-20 border border-white border-opacity-40 text-white rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none placeholder-white"
+              placeholder={t("user.signUp.placeholder.passwordConfirm")}
+            />
+            {error?.passwordConfirm && (
+              <p className="text-red-400 text-center">
+                {error.passwordConfirm}
+              </p>
+            )}
+          </div>
+
+          {/* Submit */}
+          <PrimaryButton
+            onClick={handleEnter}
+            addStyle="w-full"
+            disabled={isLoading}
+          >
+            {isLoading ? t("user.signUp.signingUp") : t("user.signUp.signUp")}
+          </PrimaryButton>
+        </form>
+        {/* Already Account Link */}
+        <p className="mt-4 text-center text-white text-sm">
+          <Trans
+            i18nKey="user.signUp.helper"
+            components={[
+              <Link
+                key={0}
+                className="text-emerald-900 hover:underline"
+                to="/login"
+              />,
+            ]}
+          />
+        </p>
+      </div>
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@ import { VscVerifiedFilled } from "react-icons/vsc";
 import { useState } from "react";
 import { Link } from "react-router";
 import { Trans, useTranslation } from "react-i18next";
-import { fetchUser } from "../store/UserSlice";
+import { fetchUser, logout } from "../store/UserSlice";
 
 // Import components
 import PrimaryButton from "../components/ui/PrimaryButton";
@@ -75,6 +75,16 @@ function Profile() {
       setIsLoading(false);
     }
   };
+
+  async function handleLogout() {
+    try {
+      await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/logout`);
+    } catch (err) {
+      setError(err.message);
+      return;
+    }
+    dispatch(logout());
+  }
 
   return (
     <div className="flex flex-col lg:flex gap-10 text-white px-2 sm:px-0">
@@ -155,6 +165,11 @@ function Profile() {
           <div className="mt-3 mb-3 w-[256px] mx-auto">
             <PrimaryButton onClick={handleSave} addStyle="sm:w-full">
               {isLoading ? t("general.saving") : t("general.save")}
+            </PrimaryButton>
+          </div>
+          <div className="mt-3 mb-3 w-[256px] mx-auto">
+            <PrimaryButton onClick={handleLogout} addStyle="sm:w-full">
+              {isLoading ? t("general.loggingOut") : t("general.logout")}
             </PrimaryButton>
           </div>
           {error && <p className="text-red-400 text-center">{error}</p>}

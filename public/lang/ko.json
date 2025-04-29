@@ -6,7 +6,8 @@
     "profile": "프로필",
     "home": "홈",
     "save": "저장",
-    "saving": "저장 중..."
+    "saving": "저장 중...",
+    "close": "닫기"
   },
   "homepage": {
     "title": "내 포트폴리오에 오신 것을 환영합니다",
@@ -128,12 +129,39 @@
       "loading": "토큰 확인 중...",
       "helper": "이미 인증하셨나요? <0>홈으로<0/>"
     },
-    "signSucces": {
+    "signSuccess": {
       "title": "계정 생성 완료!",
       "text": "계정이 성공적으로 생성되었습니다. 인증 메일을 보냈으니, 링크를 클릭하여 계정을 활성화해주세요.",
       "advice": "인증 후 바로 사용하실 수 있습니다!",
-      "note": "스팸 메일함도 꼭 확인해주세요!",
-      "close": "닫기"
+      "note": "스팸 메일함도 꼭 확인해주세요!"
+    },
+    "forgetPassword": {
+      "email": "이메일",
+      "sendEmail": "이메일 보내기",
+      "sending": "보내는 중...",
+      "helper": "계정이 없으신가요? <0>가입하기<0/>",
+      "placeholder": {
+        "email": "이메일을 입력하세요"
+      }
+    },
+    "passwordReset": {
+      "token": "토큰",
+      "password": "비밀번호",
+      "passwordConfirm": "비밀번호 확인",
+      "change": "비밀번호 변경",
+      "changing": "변경 중...",
+      "placeholder": {
+        "password": "새 비밀번호를 입력하세요",
+        "passwordConfirm": "비밀번호를 확인하세요"
+      }
+    },
+    "changeSuccess": {
+      "title": "비밀번호 변경됨",
+      "text": "비밀번호가 성공적으로 변경되었습니다. 이제 로그인되었습니다"
+    },
+    "sendSucces": {
+      "title": "재설정 링크 전송됨!",
+      "text": "비밀번호 재설정 링크를 보냈습니다. 이메일을 확인하세요"
     }
   },
   "error": {

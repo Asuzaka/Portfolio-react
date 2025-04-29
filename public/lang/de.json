@@ -6,7 +6,10 @@
     "profile": "Profil",
     "home": "Startseite",
     "save": "Speichern",
-    "saving": "Speichern läuft..."
+    "saving": "Speichern läuft...",
+    "close": "Schließen",
+    "logout": "Abmelden",
+    "loggingOut": "Abmeldung..."
   },
   "homepage": {
     "title": "Willkommen in meinem Portfolio",
@@ -128,12 +131,39 @@
       "loading": "Token wird überprüft...",
       "helper": "Schon verifiziert? <0>Zur Startseite<0/>"
     },
-    "signSucces": {
+    "signSuccess": {
       "title": "Konto erstellt!",
       "text": "Dein Konto wurde erfolgreich erstellt. Eine Bestätigungsmail wurde gesendet. Bitte klicke auf den Link in der Mail, um die Registrierung abzuschließen.",
       "advice": "Nach der Bestätigung kannst du die App verwenden!",
-      "note": "Vergiss nicht, deinen Spam-Ordner zu überprüfen!",
-      "close": "Schließen"
+      "note": "Vergiss nicht, deinen Spam-Ordner zu überprüfen!"
+    },
+    "forgetPassword": {
+      "email": "E-Mail",
+      "sendEmail": "E-Mail senden",
+      "sending": "Wird gesendet...",
+      "helper": "Kein Konto? <0>Registrieren<0/>",
+      "placeholder": {
+        "email": "Geben Sie Ihre E-Mail ein"
+      }
+    },
+    "passwordReset": {
+      "token": "Token",
+      "password": "Passwort",
+      "passwordConfirm": "Passwort bestätigen",
+      "change": "Passwort ändern",
+      "changing": "Ändern...",
+      "placeholder": {
+        "password": "Neues Passwort eingeben",
+        "passwordConfirm": "Passwort bestätigen"
+      }
+    },
+    "changeSuccess": {
+      "title": "Passwort geändert",
+      "text": "Ihr Passwort wurde erfolgreich geändert. Sie sind jetzt eingeloggt"
+    },
+    "sendSucces": {
+      "title": "Zurücksetzungs-Link gesendet!",
+      "text": "Wir haben Ihnen einen Link zum Zurücksetzen des Passworts gesendet. Überprüfen Sie Ihre E-Mail"
     }
   },
   "error": {

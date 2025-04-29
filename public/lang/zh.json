@@ -6,7 +6,10 @@
     "profile": "个人资料",
     "home": "主页",
     "save": "保存",
-    "saving": "保存中..."
+    "saving": "保存中...",
+    "close": "关闭",
+    "logout": "登出",
+    "loggingOut": "正在登出..."
   },
   "homepage": {
     "title": "欢迎来到我的作品集",
@@ -132,8 +135,35 @@
       "title": "账户已创建！",
       "text": "我们已成功创建你的账户，并发送了一封验证邮件到你的邮箱。请打开邮件中的链接验证你的账户。",
       "advice": "验证账户后你就可以开始探索啦！",
-      "note": "别忘了检查垃圾邮箱！",
-      "close": "关闭"
+      "note": "别忘了检查垃圾邮箱！"
+    },
+    "forgetPassword": {
+      "email": "电子邮箱",
+      "sendEmail": "发送邮件",
+      "sending": "发送中...",
+      "helper": "没有账户？<0>注册<0/>",
+      "placeholder": {
+        "email": "请输入你的邮箱"
+      }
+    },
+    "passwordReset": {
+      "token": "令牌",
+      "password": "密码",
+      "passwordConfirm": "确认密码",
+      "change": "更改密码",
+      "changing": "更改中...",
+      "placeholder": {
+        "password": "请输入新密码",
+        "passwordConfirm": "请确认密码"
+      }
+    },
+    "changeSuccess": {
+      "title": "密码已更改",
+      "text": "您的密码已成功更改。您现在已登录"
+    },
+    "sendSucces": {
+      "title": "重置链接已发送！",
+      "text": "我们已向您发送密码重置链接。请检查您的邮箱"
     }
   },
   "error": {

@@ -6,7 +6,10 @@
     "profile": "Profile",
     "home": "Home",
     "save": "Save",
-    "saving": "Saving..."
+    "saving": "Saving...",
+    "logout": "Log out",
+    "loggingOut": "Logging out...",
+    "close": "Close"
   },
   "homepage": {
     "title": "Welcome to My Portfolio",
@@ -128,12 +131,39 @@
       "loading": "Verifying token...",
       "helper": "Already verified? <0>Home<0/>"
     },
-    "signSucces": {
+    "signSuccess": {
       "title": "Account Created!",
       "text": "We have created your account successfully. A verification email has been sent to your inbox. Please open the link in the email to verify your account.",
       "advice": "Once you have verified your account, you can start exploring!",
-      "note": "Do not forget to check spam folder!",
-      "close": "Close"
+      "note": "Do not forget to check spam folder!"
+    },
+    "forgetPassword": {
+      "email":"Email",
+      "sendEmail": "Send email",
+      "sending": "Sending...",
+      "helper": "No account? <0>Sign up<0/>",
+      "placeholder": {
+        "email":"Enter your email"
+      }
+    },
+    "passwordReset": {
+      "token": "Token",
+      "password": "Password",
+      "passwordConfirm": "Password Confirm",
+      "change": "Change password",
+      "changing": "Changing...",
+      "placeholder": {
+        "password":"Enter new Password",
+        "passwordConfirm":"Password Confirm"
+      }
+    },
+    "changeSuccess": {
+      "title" : "Passworc Changed",
+      "text" : "Your password was changed succesfully. You are now logged in "
+    },
+    "sendSucces" : {
+      "title" : "Reset url Sent!",
+      "text" : "We have send you a password reset Url. Check you email"
     }
   },
   "error": {

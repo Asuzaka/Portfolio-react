@@ -6,7 +6,10 @@
     "profile": "Profil",
     "home": "Bosh sahifa",
     "save": "Saqlash",
-    "saving": "Saqlanmoqda..."
+    "saving": "Saqlanmoqda...",
+    "close": "Yopish",
+    "logout": "Chiqish",
+    "loggingOut": "Chiqilmoqda..."
   },
   "homepage": {
     "title": "Portfolioimga xush kelibsiz",
@@ -132,8 +135,35 @@
       "title": "Hisob yaratildi!",
       "text": "Hisobingiz muvaffaqiyatli yaratildi. Email manzilingizga tasdiqlovchi havola yuborildi. Iltimos, uni ochib, hisobingizni tasdiqlang.",
       "advice": "Hisobingizni tasdiqlaganingizdan so‘ng saytdan foydalanishni boshlashingiz mumkin!",
-      "note": "Spam papkasini ham tekshirishni unutmang!",
-      "close": "Yopish"
+      "note": "Spam papkasini ham tekshirishni unutmang!"
+    },
+    "forgetPassword": {
+      "email": "Elektron pochta",
+      "sendEmail": "Email yuborish",
+      "sending": "Yuborilmoqda...",
+      "helper": "Hisobingiz yo'qmi? <0>Ro'yxatdan o'ting<0/>",
+      "placeholder": {
+        "email": "Email manzilingizni kiriting"
+      }
+    },
+    "passwordReset": {
+      "token": "Token",
+      "password": "Parol",
+      "passwordConfirm": "Parolni tasdiqlang",
+      "change": "Parolni o'zgartirish",
+      "changing": "O'zgartirilmoqda...",
+      "placeholder": {
+        "password": "Yangi parolni kiriting",
+        "passwordConfirm": "Parolni tasdiqlang"
+      }
+    },
+    "changeSuccess": {
+      "title": "Parol o'zgartirildi",
+      "text": "Parolingiz muvaffaqiyatli o'zgartirildi. Siz tizimga kirdingiz"
+    },
+    "sendSucces": {
+      "title": "Parolni tiklash havolasi yuborildi!",
+      "text": "Parolni tiklash havolasini yubordik. Elektron pochtangizni tekshiring"
     }
   },
   "error": {
